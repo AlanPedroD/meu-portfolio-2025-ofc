@@ -5,10 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meu Portfólio</title>
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <!-- Fonte noto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
 </head>
@@ -43,56 +48,93 @@
 
   <!-- Seção Projetos -->
   <section id="projetos">
-    <h2>Meus Projetos</h2>
+    <div class="caixa-meus-projetos">
+      <h2>Meus Projetos</h2>
+    </div>
     <div class="projetos-container">
       <div class="card">
-        <h3>Projeto Quiz Rápido</h3>
-        <p class="descricao">O usuário responde 5 questões de múltipla escolha e, ao final, é exibido o número de
-          acertos.</p>
-        <p class="tecnologias">HTML, CSS, Jvascript</p>
-        <a href="https://alanpedrod.github.io/joguinho-quiz/" class="btn-projeto" target="_blank">Visualizar Projeto</a>
+        <div class="conteudo-card">
+          <h3>Projeto Quiz Rápido</h3>
+          <p class="descricao">O usuário responde 5 questões de múltipla escolha e, ao final, é exibido o número de
+            acertos.</p>
+          <p class="tecnologias">HTML, CSS, Jvascript</p>
+          <a href="https://alanpedrod.github.io/joguinho-quiz/" class="btn-projeto" target="_blank">Visualizar Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-quiz.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>Projeto TopWebLangs</h3>
-        <p class="descricao">Permite ao usuário visualizar, adicionar, substituir e excluir linguagens de programação
-          web em um ranking dinâmico</p>
-        <p class="tecnologias">HTML, CSS, Jvascript</p>
-        <a href="https://alanpedrod.github.io/projeto-ranking-linguagens/" class="btn-projeto"
-          target="_blank">Visualizar Projeto</a>
+        <div class="conteudo-card">
+          <h3>Projeto TopWebLangs</h3>
+          <p class="descricao">Permite ao usuário visualizar, adicionar, substituir e excluir linguagens de programação
+            web em um ranking dinâmico</p>
+          <p class="tecnologias">HTML, CSS, Jvascript</p>
+          <a href="https://alanpedrod.github.io/projeto-ranking-linguagens/" class="btn-projeto"
+            target="_blank">Visualizar Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-linguagens.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>Projeto Artes urbanas</h3>
-        <p class="descricao">Landing-page responsiva utilizando Bootstrap</p>
-        <p class="tecnologias">HTML, CSS, Bootstrap</p>
-        <a href="https://alanpedrod.github.io/projeto-artes-urbanas/" class="btn-projeto" target="_blank">Visualizar
-          Projeto</a>
+        <div class="conteudo-card">
+          <h3>Projeto Artes urbanas</h3>
+          <p class="descricao">Landing-page responsiva utilizando Bootstrap</p>
+          <p class="tecnologias">HTML, CSS, Bootstrap</p>
+          <a href="https://alanpedrod.github.io/projeto-artes-urbanas/" class="btn-projeto" target="_blank">Visualizar
+            Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-pinturas.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>Projeto Loja de sapatos</h3>
-        <p class="descricao">Permite ao usuário escolher o tema light ou dark</p>
-        <p class="tecnologias">HTML, CSS, Javascript</p>
-        <a href="https://alanpedrod.github.io/loja-de-sapatos-light-dark-theme/" class="btn-projeto"
-          target="_blank">Visualizar Projeto</a>
+        <div class="conteudo-card">
+          <h3>Projeto Loja de sapatos</h3>
+          <p class="descricao">Permite ao usuário escolher o tema light ou dark</p>
+          <p class="tecnologias">HTML, CSS, Javascript</p>
+          <a href="https://alanpedrod.github.io/loja-de-sapatos-light-dark-theme/" class="btn-projeto"
+            target="_blank">Visualizar Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-sapato.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>Projeto agência XYZ</h3>
-        <p class="descricao">Landing-page responsiva utilizando Grid e flexbox</p>
-        <p class="tecnologias">HTML, CSS</p>
-        <a href="https://landing-page-com-grid.vercel.app/" class="btn-projeto" target="_blank">Visualizar Projeto</a>
+        <div class="conteudo-card">
+          <h3>Projeto agência XYZ</h3>
+          <p class="descricao">Landing-page responsiva utilizando Grid e flexbox</p>
+          <p class="tecnologias">HTML, CSS</p>
+          <a href="https://landing-page-com-grid.vercel.app/" class="btn-projeto" target="_blank">Visualizar Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-ag-xyz.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>simulador carrinho de compras</h3>
-        <p class="descricao">Carrinho de compras para adicionar ou remover itens</p>
-        <p class="tecnologias">HTML, CSS, Javascript</p>
-        <a href="https://alanpedrod.github.io/simulador-carrinho-de-compras/" class="btn-projeto"
-          target="_blank">Visualizar Projeto</a>
+        <div class="conteudo-card">
+          <h3>simulador carrinho de compras</h3>
+          <p class="descricao">Carrinho de compras para adicionar ou remover itens</p>
+          <p class="tecnologias">HTML, CSS, Javascript</p>
+          <a href="https://alanpedrod.github.io/simulador-carrinho-de-compras/" class="btn-projeto"
+            target="_blank">Visualizar Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-carrinho.png" alt="">
+        </div>
       </div>
       <div class="card">
-        <h3>identificador de idade</h3>
-        <p class="descricao">Ao colocar o ano de nascimento, escoher o sexo, o programa mostra a idade da pessoa</p>
-        <p class="tecnologias">HTML, CSS, Javascript</p>
-        <a href="https://alanpedrod.github.io/identificador-de-idade/" class="btn-projeto" target="_blank">Visualizar
-          Projeto</a>
+        <div class="conteudo-card">
+          <h3>identificador de idade</h3>
+          <p class="descricao">Ao colocar o ano de nascimento, escoher o sexo, o programa mostra a idade da pessoa</p>
+          <p class="tecnologias">HTML, CSS, Javascript</p>
+          <a href="https://alanpedrod.github.io/identificador-de-idade/" class="btn-projeto" target="_blank">Visualizar
+            Projeto</a>
+        </div>
+        <div class="container-imagem-card">
+          <img src="images/imagem-card-simul-idade.png" alt="">
+        </div>
       </div>
     </div>
   </section>

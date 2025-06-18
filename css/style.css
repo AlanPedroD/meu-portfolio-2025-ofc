@@ -79,6 +79,7 @@ body, html {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: "Noto Serif", serif; 
 }
 
 .hero p {
@@ -113,6 +114,7 @@ body, html {
 #projetos h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  font-family: "Noto Serif", serif; 
 }
 
 .projetos-container {

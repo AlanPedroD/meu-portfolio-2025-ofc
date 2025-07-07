@@ -198,6 +198,9 @@ body, html {
   font-size: 0.95rem;
   line-height: 16px;
 }
+.card .descricao strong{
+  color: #222222d2;
+}
 
 .card .tecnologias {
   font-weight: bold;

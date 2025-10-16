@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* Escala global: simula 80% de zoom mantendo o padrão de 100% nos navegadores */
+html {
+  font-size: 14px; /* Reduz de 16px (padrão) → ~80% da escala visual */
+}
+
 :root {
   --primary: #2563eb;
   --primary-dark: #1e40af;
@@ -27,20 +32,20 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.5rem;
 }
 
 header {
-  padding: 60px 0 40px;
+  padding: 4rem 0 2.5rem;
   text-align: center;
   position: relative;
 }
 
 .back-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 12px 25px;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: 0.75rem 1.6rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -51,7 +56,7 @@ header {
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .back-button:hover {
@@ -61,8 +66,8 @@ header {
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,43 +76,36 @@ h1 {
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   animation: fadeInUp 0.8s ease 0.2s backwards;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-  margin: 40px 0 80px;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0 5rem;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
   animation: fadeIn 0.8s ease backwards;
 }
-.project-card .icone-sol{
-color: #FA9F2E;
-}
-.project-card .icone-usuario{
-color: #0f172a;
-}
-.project-card .icone-caderno{
-color: #F87A43;
-}
-.project-card .icone-sacola{
-color: #F89626;
-}
-.project-card .icone-artes{
-color: #080808;
-}
+
+.project-card .icone-sol { color: #FA9F2E; }
+.project-card .icone-usuario { color: #0f172a; }
+.project-card .icone-caderno { color: #F87A43; }
+.project-card .icone-sacola { color: #F89626; }
+.project-card .icone-artes { color: #080808; }
 
 .project-card:nth-child(1) { animation-delay: 0.1s; }
 .project-card:nth-child(2) { animation-delay: 0.2s; }
@@ -124,12 +122,12 @@ color: #080808;
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   position: relative;
   overflow: hidden;
 }
@@ -137,57 +135,58 @@ color: #080808;
 .project-image::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .project-content {
-  padding: 25px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--text);
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 .project-description {
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   line-height: 1.6;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .tag {
-  padding: 5px 12px;
+  padding: 0.3rem 0.75rem;
   background: rgba(37, 99, 235, 0.2);
   border: 1px solid var(--primary);
-  border-radius: 15px;
-  font-size: 0.85rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
   color: var(--primary);
 }
 
 .project-links {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
 .project-btn {
   flex: 1;
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   text-align: center;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
   font-size: 0.9rem;
@@ -216,34 +215,34 @@ color: #080808;
 
 .cta-section {
   text-align: center;
-  padding: 60px 0;
-  margin: 80px 0;
+  padding: 4rem 0;
+  margin: 5rem 0;
   background: rgba(255, 255, 255, 0.03);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
   color: var(--text);
 }
 
 .cta-text {
   color: var(--text-muted);
-  margin-bottom: 30px;
-  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .contact-buttons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 15px 35px;
+  padding: 1rem 2.2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
@@ -251,7 +250,7 @@ color: #080808;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
   border: 2px solid transparent;
 }
 
@@ -278,26 +277,26 @@ color: #080808;
 
 footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   color: var(--text-muted);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
+  margin-top: 3.5rem;
 }
 
 /* Botão WhatsApp Fixo */
 .whatsapp-float {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: var(--whatsapp);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   transition: all 0.3s ease;
@@ -311,34 +310,18 @@ footer {
 }
 
 @keyframes pulse {
-  0%, 100% {
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  }
-  50% {
-      box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
-  }
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
 }
 
 @keyframes fadeInDown {
-  from {
-      opacity: 0;
-      transform: translateY(-30px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(30px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
@@ -346,36 +329,15 @@ footer {
   to { opacity: 1; }
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-  h1 {
-      font-size: 2rem;
+  h1 { font-size: 2rem; }
+  /* .projects-grid { grid-template-columns: 1fr; } */
+  .projects-grid { 
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   }
-
-  .projects-grid {
-      grid-template-columns: 1fr;
-  }
-
-  .back-button {
-      position: static;
-      margin-bottom: 20px;
-  }
-
-  .contact-buttons {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .btn {
-      width: 100%;
-      max-width: 300px;
-      justify-content: center;
-  }
-
-  .whatsapp-float {
-      bottom: 20px;
-      right: 20px;
-      width: 55px;
-      height: 55px;
-      font-size: 1.8rem;
-  }
+  .back-button { position: static; margin-bottom: 1.25rem; }
+  .contact-buttons { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 18rem; justify-content: center; }
+  .whatsapp-float { bottom: 1.2rem; right: 1.2rem; width: 3rem; height: 3rem; font-size: 1.6rem; }
 }

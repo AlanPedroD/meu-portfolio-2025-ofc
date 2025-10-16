@@ -183,7 +183,6 @@ header {
 .experience-card:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: var(--secondary);
-    /* transform: translateX(10px); */
 }
 
 .experience-title {
@@ -213,8 +212,7 @@ header {
   color: #FA9F2E;
 }
 .experience-description .destaque-api{
-  color: #69b7a4;
-  font-weight: 500;
+  color: #9BFFE1;
 }
 .experience-description .destaque-git{
   color: #E94F31;
